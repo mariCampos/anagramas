@@ -1,0 +1,22 @@
+{
+  "name": "anagramas",
+  "version": "1.0.0",
+  "description": "DojoPuzzles problem with TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariCampos/anagramas.git"
+  },
+  "keywords": [
+    "anagramas"
+  ],
+  "author": "Mariana Campos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariCampos/anagramas/issues"
+  },
+  "homepage": "https://github.com/mariCampos/anagramas#readme"
+}
