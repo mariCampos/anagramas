@@ -1,7 +1,7 @@
 const anagrama = require('../anagrama');
 
 test('Dado uma letra, retorna apenas uma palavra', () => {
-    var resposta = anagrama.formaAnagrama('m');
+    var resposta = anagrama.permuta('m');
     expect(resposta).toMatch('m');
 });
 

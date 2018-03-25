@@ -1,4 +1,5 @@
 const readline = require('readline');
+const anagrama = require('./anagrama');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -8,6 +9,6 @@ const rl = readline.createInterface({
   rl.question('palavra: ', (answer) => {
     // TODO: Log the answer in a database
     
-    console.log('Possíveis anagramas: ');
+    anagrama.permuta(answer);
     rl.close();
   });

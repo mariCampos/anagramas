@@ -4,7 +4,8 @@
   "description": "DojoPuzzles problem with TDD",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
