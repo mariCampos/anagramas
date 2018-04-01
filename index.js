@@ -1,5 +1,6 @@
 const readline = require('readline');
 const anagrama = require('./anagrama');
+const view = require('./view');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -10,5 +11,6 @@ const rl = readline.createInterface({
     // TODO: Log the answer in a database
     
     anagrama.permuta(answer);
+    view.mostraAnagrama(answer);
     rl.close();
   });

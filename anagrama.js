@@ -6,17 +6,15 @@ module.exports = {
         //mando vetor de caracteres
         var letrasArray = letras.split('');
         var permutaCorrente = new Array();//recebe o vetor cujos elementos serão permutados
-        this.formaAnagrama(letrasArray, 0, permutaCorrente);
-        
+        this.formaAnagrama(letrasArray, 0, permutaCorrente);   
     },
 
     formaAnagrama(letras, indice, permutaCorrente) {
-        //var letras = palavra.split('');
         var cont = 0;
 
         if (letras.length === indice) {
             cont++;
-            view.mostraAnagrama(permutaCorrente, cont);
+            view.montaAnagrama(permutaCorrente, cont);
             permutaCorrente = [];
         } else {
             for (var i = 0; i < letras.length; i++) {
