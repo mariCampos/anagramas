@@ -11,6 +11,6 @@ const rl = readline.createInterface({
     // TODO: Log the answer in a database
     
     anagrama.permuta(answer);
-    view.mostraAnagrama(answer);
+    console.log(view.mostraAnagrama(answer));
     rl.close();
   });

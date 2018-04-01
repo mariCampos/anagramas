@@ -17,14 +17,13 @@ module.exports = {
       var resultado = '';
 
       for(var i = 0; i < palavras.length; i++) {
-          linha += " " + palavras[i];
+          linha += palavras[i] + ' ';
           contador++;
 
           if (contador === limite) {
-              resultado += linha + '\n'
-            console.log(linha);
-            contador = 0;
-            linha = '';
+              resultado += linha + '\n';
+                contador = 0;
+                linha = '';
           }
       }
       return resultado;
