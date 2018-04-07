@@ -17,20 +17,20 @@ module.exports = {
             view.montaAnagrama(permutaCorrente, cont);
             permutaCorrente = [];
         } else {
-            for (var i = 0; i < letras.length; i++) {
+            letras.forEach(letra => {
                 var achou = false;
 
                 for(var j = 0; j < indice; j++) {
-                    if (permutaCorrente[j] === letras[i]) {
+                    if (permutaCorrente[j] === letra) {
                         achou = true;
                     }
                 }
 
                 if (!achou) {
-                    permutaCorrente[indice] = letras[i];
+                    permutaCorrente[indice] = letra;
                     this.formaAnagrama(letras, indice + 1, permutaCorrente);
                 }
-            }
+            });
         }
        
     }

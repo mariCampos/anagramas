@@ -4,9 +4,9 @@ module.exports = {
     montaAnagrama(anagrama, cont) {
 
         var novaPalavra = '';
-        for(var i = 0; i < anagrama.length; i++) {
-            novaPalavra += anagrama[i];
-        }
+        anagrama.forEach(element => {
+            novaPalavra += element;
+        });
         palavras.push(novaPalavra);
     },
 
@@ -16,16 +16,17 @@ module.exports = {
       var contador = 0;
       var resultado = '';
 
-      for(var i = 0; i < palavras.length; i++) {
-          linha += palavras[i] + ' ';
-          contador++;
+      palavras.forEach(anagrama => {
+        linha += anagrama + ' ';
+        contador++;
 
-          if (contador === limite) {
-              resultado += linha + '\n';
-                contador = 0;
-                linha = '';
-          }
-      }
+        if (contador === limite) {
+            resultado += linha + '\n';
+              contador = 0;
+              linha = '';
+        }
+      })
+
       return resultado;
     }
 }
